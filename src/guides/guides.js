@@ -1,0 +1,55 @@
+export const GUIDES = [
+  {
+    id: "guide_breath_reset_10",
+    title: "Breath Reset (10 min)",
+    durationSec: 10 * 60,
+    style: "breath",
+    difficulty: "easy",
+    cues: [
+      { atSec: 0, text: "Find a comfortable posture. Let your shoulders drop.", speak: true },
+      { atSec: 20, text: "Bring attention to the breath—no need to change it.", speak: true },
+      { atSec: 60, text: "Inhale gently… exhale slowly.", speak: true },
+      { atSec: 120, text: "If the mind wanders, notice it kindly, and return.", speak: true },
+      { atSec: 240, text: "Soften the face. Unclench the jaw.", speak: true },
+      { atSec: 360, text: "Feel the breath at the nostrils or the belly.", speak: true },
+      { atSec: 480, text: "Let the exhale be slightly longer than the inhale.", speak: true },
+      { atSec: 570, text: "In the final moments, rest in simple awareness.", speak: true },
+      { atSec: 600, text: "When you’re ready, open your eyes. Carry this calm forward.", speak: true },
+    ],
+  },
+  {
+    id: "guide_body_scan_sleep_12",
+    title: "Body Scan for Sleep (12 min)",
+    durationSec: 12 * 60,
+    style: "body_scan",
+    difficulty: "easy",
+    cues: [
+      { atSec: 0, text: "Lie down or sit back. Let the body feel supported.", speak: true },
+      { atSec: 30, text: "Bring attention to the feet. Notice warmth, pressure, or tingling.", speak: true },
+      { atSec: 120, text: "Move to the legs. Relax the muscles as you exhale.", speak: true },
+      { atSec: 240, text: "Notice the hips and lower back. Let them soften.", speak: true },
+      { atSec: 360, text: "Bring attention to the belly and chest. Allow the breath to be easy.", speak: true },
+      { atSec: 480, text: "Relax the shoulders, arms, hands—release any holding.", speak: true },
+      { atSec: 600, text: "Soften the face. Smooth the forehead. Let the jaw hang.", speak: true },
+      { atSec: 720, text: "Rest as a whole body. If you drift, that’s okay.", speak: true },
+    ],
+  },
+  {
+    id: "guide_focus_reset_8",
+    title: "Focus Reset (8 min)",
+    durationSec: 8 * 60,
+    style: "focus",
+    difficulty: "medium",
+    cues: [
+      { atSec: 0, text: "Set an intention: one clear focus for the next few minutes.", speak: true },
+      { atSec: 30, text: "Feel the breath and the ground beneath you.", speak: true },
+      { atSec: 90, text: "Notice sounds. Let them come and go without chasing.", speak: true },
+      { atSec: 180, text: "If planning arises, label it 'thinking' and return.", speak: true },
+      { atSec: 300, text: "Choose one anchor: breath, sound, or sensation.", speak: true },
+      { atSec: 420, text: "In the final minute, steady and simple.", speak: true },
+      { atSec: 480, text: "Open your eyes. Bring this focus into your next task.", speak: true },
+    ],
+  },
+];
+
+export function getGuide(id) { return GUIDES.find((g) => g.id === id); }
