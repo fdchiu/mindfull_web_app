@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getSetting, setSetting } from "../data/repo";
+import { getSetting, setSetting } from "../data/repo.js";
 
 const defaults = { reduceMotion: "system", highContrast: false, textScale: "normal", calmSessionMode: true };
 

@@ -27,7 +27,7 @@ import {
   importAll,
   getSetting,
   setSetting,
-} from "./data/repo";
+} from "./data/repo.js";
 
 // Utilities
 const uid = () => crypto.randomUUID?.() ?? String(Date.now()) + Math.random();

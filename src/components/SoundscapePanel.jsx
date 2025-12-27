@@ -1,5 +1,5 @@
 import React, { useMemo, useState } from "react";
-import { newPresetFrom } from "../data/presets";
+import { newPresetFrom } from "../data/presets.js";
 
 export default function SoundscapePanel({ presets, setPresets, selectedPresetId, setSelectedPresetId, engine }) {
   const selected = useMemo(() => presets.find((p) => p.id === selectedPresetId) ?? presets[0], [presets, selectedPresetId]);

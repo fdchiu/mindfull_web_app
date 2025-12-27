@@ -17,3 +17,7 @@ pnpm-debug.log*
 
 # OS/filesystem noise
 .DS_Store
+
+# Ensure data modules are tracked (overrides global ignores)
+!src/data/
+!src/data/**

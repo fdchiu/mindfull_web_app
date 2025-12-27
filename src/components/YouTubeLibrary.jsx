@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useState } from "react";
 import { mockProvider, buildCurationPolicy, isAllowed, rankVideos, durationBucket } from "../youtube/provider";
-import { getSavedYouTube, saveYouTubeItem, removeYouTubeItem } from "../data/repo";
+import { getSavedYouTube, saveYouTubeItem, removeYouTubeItem } from "../data/repo.js";
 
 export default function YouTubeLibrary({ onPickVideo }) {
   const [tab, setTab] = useState("curated");
